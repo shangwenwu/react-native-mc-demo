@@ -44,7 +44,6 @@ class Index extends Component {
       this.updateTodo = this.props.updateTodo;
       
       this.data = this.props.data.FetchData[0];
-      //http://mall.api.test.yunshanmeicai.com/account/loginv2?phone=15810071768&password=1
        const {ajaxData,ajaxSucceed,ajaxFailed} = this.props;
        if(!this.data.loginInfo.login){
              ajaxData({url:'login',method:'GET',body:'phone=15810071768&password=1',succeed:ajaxSucceed,failed:ajaxFailed})
